@@ -1,0 +1,15 @@
+//html tag
+ <div class="infront-design">
+          <img src="images/golden-girl.png" alt="golden girl" class="d-none d-md-inline-block img-fluid golden-girl" id="prallel-golden-girl">
+
+        </div>
+        
+//js tag
+$(window).scroll(function(){
+
+
+  var wScroll = $(this).scrollTop();
+  $('#prallel-golden-girl').css({
+    'transform': 'translate(0px,'+(wScroll*0.055-30)+'px)'
+  });
+  });
